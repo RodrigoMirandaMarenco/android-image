@@ -61,4 +61,6 @@ RUN mkdir /opt/android-ndk-tmp && \
     cd ${ANDROID_NDK_HOME} && \
     rm -rf /opt/android-ndk-tmp
 
+RUN chmod -R 777 /opt/android-sdk-linux/
+
 CMD /opt/tools/entrypoint.sh built-in
