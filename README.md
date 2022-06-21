@@ -1,6 +1,6 @@
 # Docker for Android SDK + NDK
 
-Docker for Android SDK 32 with preinstalled build tools, emulator image and pre-installed Android NDK.
+Docker for Android SDK 31 with preinstalled build tools, emulator image and pre-installed Android NDK.
 Use tags for different SDK versions.
 
 > Based on [mindrunner/docker-android-sdk](https://github.com/mindrunner/docker-android-sdk)
@@ -16,8 +16,8 @@ Use tags for different SDK versions.
   emulator                                    | 30.1.5  | Android Emulator                           | emulator/
   patcher;v4                                  | 1       | SDK Patch Applier v4                       | patcher/v4/
   platform-tools                              | 30.0.4  | Android SDK Platform-Tools                 | platform-tools/
-  platforms;android-32                        | 32      | Android SDK Platform 32                    | platforms/android-32/
-  system-images;android-32;google_apis;x86_64 | 11      | Google APIs Intel x86 Atom_64 System Image | system-images/android-32/google_apis/x86_64/
+  platforms;android-31                        | 31      | Android SDK Platform 31                    | platforms/android-31/
+  system-images;android-31;google_apis;x86_64 | 11      | Google APIs Intel x86 Atom_64 System Image | system-images/android-31/google_apis/x86_64/
   NDK                                         | r22     | Android NDK r22                            | ndk/
 ```
 
@@ -29,7 +29,7 @@ Use tags for different SDK versions.
   # check installed packages
   $ sdkmanager --list
   # create and run emulator
-  $ avdmanager create avd -n first_avd --abi google_apis/x86_64 -k "system-images;android-32;google_apis;x86_64"
+  $ avdmanager create avd -n first_avd --abi google_apis/x86_64 -k "system-images;android-31;google_apis;x86_64"
   $ emulator -avd first_avd -no-window -no-audio &
   $ adb devices
   # You can also run other Android platform tools, which are all added to the PATH environment variable
